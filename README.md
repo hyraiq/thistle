@@ -6,7 +6,7 @@ Implement a basic mail reader clone in Aurelia + TypeScript
 
 ## Demo:
 
-![YouTube Video](https://www.youtube.com/watch?v=maH0W3cLgko)
+![isyoutube](https://www.youtube.com/watch?v=maH0W3cLgko)
 
 ## Background:
 
