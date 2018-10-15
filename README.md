@@ -2,7 +2,18 @@
 
 ## Task:
 
-Implement a basic mail reader clone in Aurelia + TypeScript
+Implement a "Candidate Management System" in Aurelia + TypeScript.
+
+As a user, I want to:
+
+* see a list of candidates
+* click on a candidate to preview the message
+* mark a candidate as "not interested" / "interested"
+* filter candidates by decision (undecided/not interested/interested) 
+
+## Designs
+
+TODO: Insert designs
 
 ## Demo:
 
@@ -35,3 +46,6 @@ $ yarn install
 ## Read more:
 
 * [Running the application](docs/running-the-application.md)
+* [Guide: Writing styles](docs/guide-styles.md)
+* [Guide: Fonts/Icons](docs/guide-fonts-icons.md)
+* [Helpful Resources](docs/helpful-resources.md)
