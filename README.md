@@ -6,9 +6,7 @@ Implement a basic mail reader clone in Aurelia + TypeScript
 
 ## Demo:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=maH0W3cLgko
-" target="_blank"><img src="http://img.youtube.com/vi/maH0W3cLgko/0.jpg" 
-alt="Thistle Demo" width="240" height="180" border="10" /></a>
+[![Thistle Demo](./docs/images/video.png)](http://www.youtube.com/watch?v=maH0W3cLgko)
 
 ## Background:
 
