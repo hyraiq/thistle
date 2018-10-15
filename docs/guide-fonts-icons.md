@@ -1,4 +1,4 @@
-# Guide: Using fonts icons
+# Guide: Using fonts/icons
 
 We've set up the app to use Helvetica, the designs technically had Roboto font, but don't worry about that.
 
