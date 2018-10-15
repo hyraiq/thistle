@@ -1,4 +1,11 @@
 <template>
   <require from="./app.less"></require>
   <h1>${message}</h1>
+  <ul>
+    <li repeat.for="candidate of candidates">
+        ${candidate.firstName} ${candidate.lastName}
+    </li>
+  </ul>
 </template>
+
+
