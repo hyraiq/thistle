@@ -4,6 +4,10 @@
 
 Implement a basic mail reader clone in Aurelia + TypeScript
 
+## Demo:
+
+![YouTube Video](https://www.youtube.com/watch?v=maH0W3cLgko)
+
 ## Background:
 
 We use the [Aurelia JavaScript framework](https://aurelia.io/) at Hyra iQ - we like it because it leverages next gen
