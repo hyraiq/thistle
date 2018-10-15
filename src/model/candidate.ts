@@ -10,6 +10,7 @@ export class Candidate {
     constructor(public firstName: string,
                 public lastName: string,
                 public messageHtml: string,
+                public blurb: string,
                 public decision: Decision,
                 public receivedAt: Date,
                 id?: number) {

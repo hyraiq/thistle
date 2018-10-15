@@ -7,6 +7,7 @@ interface ISampleCandidate {
     firstName: string;
     lastName: string;
     messageHtml: string;
+    blurb: string;
     receivedAt: string;
 }
 
@@ -16,7 +17,7 @@ export class ThistleDatabase extends Dexie {
     constructor() {
         super('thistle');
         this.version(1).stores({
-            candidates: '++id, firstName, lastName, messageHtml, decision, receivedAt'
+            candidates: '++id, firstName, lastName, messageHtml, blurb, decision, receivedAt'
         });
         this.candidates.mapToClass(Candidate);
 
@@ -32,7 +33,7 @@ export class ThistleDatabase extends Dexie {
      *
      * @param filter
      */
-    async getCandidates(filter: null|Decision = null) {
+    async getCandidates(filter: null | Decision = null) {
         let collection = this.candidates.toCollection();
 
         if (filter !== null) {
@@ -59,7 +60,14 @@ export class ThistleDatabase extends Dexie {
 
         await this.candidates.bulkAdd(
             sampleCandidates.map((candidate: ISampleCandidate) => {
-                return new Candidate(candidate.firstName, candidate.lastName, candidate.messageHtml, Decision.undecided, new Date(candidate.receivedAt));
+                return new Candidate(
+                    candidate.firstName,
+                    candidate.lastName,
+                    candidate.messageHtml,
+                    candidate.blurb,
+                    Decision.undecided,
+                    new Date(candidate.receivedAt)
+                );
             })
         );
     }
