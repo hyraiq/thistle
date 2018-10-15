@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/tom/.nvm/versions/node/v8.9.3/bin/node /Users/tom/.nvm/versions/node/v8.9.3/bin/yarn add normalise.css --save
+  /Users/tom/.nvm/versions/node/v8.9.3/bin/node /Users/tom/.nvm/versions/node/v8.9.3/bin/yarn add postcss-loader^2.1 --save-dev
 
 PATH: 
   /Users/tom/.nvm/versions/node/v8.9.3/bin:/usr/local/opt/make/libexec/gnubin:/Users/tom/src/tomtomau/vorg:/Users/tom/Library/Python/2.7/bin/:/Users/tom/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -24,57 +24,60 @@ npm manifest:
     },
     "license": "MIT",
     "dependencies": {
-      "aurelia-bootstrapper": "^2.3.0",
       "aurelia-animator-css": "^1.0.4",
+      "aurelia-bootstrapper": "^2.3.0",
+      "aurelia-polyfills": "^1.3.0",
       "bluebird": "^3.5.2",
-      "aurelia-polyfills": "^1.3.0"
+      "dexie": "^2.0.4",
+      "normalize.css": "^8.0.0",
+      "postcss-loader": "^3.0.0"
     },
     "peerDependencies": {},
     "devDependencies": {
-      "aurelia-cli": "^1.0.0-beta.2",
-      "aurelia-testing": "^1.0.0",
-      "aurelia-tools": "^2.0.0",
-      "gulp": "^4.0.0",
-      "minimatch": "^3.0.4",
-      "through2": "^2.0.3",
-      "vinyl-fs": "^3.0.3",
-      "ts-loader": "^5.2.1",
-      "ts-node": "^7.0.1",
-      "@types/node": "^10.11.6",
+      "@types/jest": "^23.3.5",
       "@types/lodash": "^4.14.117",
+      "@types/node": "^10.11.6",
       "@types/webpack": "^4.4.15",
-      "typescript": "^3.1.2",
-      "jest": "^23.6.0",
-      "jest-cli": "^23.6.0",
-      "plugin-error": "^1.0.1",
+      "aurelia-cli": "^1.0.0-beta.2",
       "aurelia-loader-nodejs": "^1.0.1",
       "aurelia-pal-nodejs": "^1.1.1",
-      "ts-jest": "^23.10.4",
-      "@types/jest": "^23.3.5",
-      "less-loader": "latest",
-      "less": "latest",
-      "gulp-rename": "^1.4.0",
-      "html-webpack-plugin": "^3.2.0",
-      "copy-webpack-plugin": "^4.5.2",
-      "mini-css-extract-plugin": "^0.4.3",
+      "aurelia-testing": "^1.0.0",
+      "aurelia-tools": "^2.0.0",
       "aurelia-webpack-plugin": "^3.0.0",
-      "duplicate-package-checker-webpack-plugin": "^3.0.0",
-      "webpack": "^4.20.2",
-      "webpack-cli": "^3.1.2",
-      "webpack-dev-server": "^3.1.9",
-      "expose-loader": "^0.7.5",
-      "style-loader": "^0.23.1",
-      "url-loader": "^1.1.1",
-      "del": "^3.0.0",
+      "copy-webpack-plugin": "^4.5.2",
       "css-loader": "^1.0.0",
+      "del": "^3.0.0",
+      "duplicate-package-checker-webpack-plugin": "^3.0.0",
+      "expose-loader": "^0.7.5",
+      "file-loader": "^2.0.0",
+      "gulp": "^4.0.0",
+      "gulp-rename": "^1.4.0",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "istanbul-instrumenter-loader": "^3.0.1",
+      "jest": "^23.6.0",
+      "jest-cli": "^23.6.0",
+      "json-loader": "^0.5.7",
+      "less": "latest",
+      "less-loader": "latest",
+      "mini-css-extract-plugin": "^0.4.3",
+      "minimatch": "^3.0.4",
       "nps": "^5.9.3",
       "nps-utils": "^1.7.0",
-      "file-loader": "^2.0.0",
-      "json-loader": "^0.5.7",
-      "html-loader": "^0.5.5",
-      "istanbul-instrumenter-loader": "^3.0.1",
       "opn": "^5.4.0",
-      "webpack-bundle-analyzer": "latest"
+      "plugin-error": "^1.0.1",
+      "style-loader": "^0.23.1",
+      "through2": "^2.0.3",
+      "ts-jest": "^23.10.4",
+      "ts-loader": "^5.2.1",
+      "ts-node": "^7.0.1",
+      "typescript": "^3.1.2",
+      "url-loader": "^1.1.1",
+      "vinyl-fs": "^3.0.3",
+      "webpack": "^4.20.2",
+      "webpack-bundle-analyzer": "latest",
+      "webpack-cli": "^3.1.2",
+      "webpack-dev-server": "^3.1.9"
     },
     "jest": {
       "modulePaths": [
@@ -2008,6 +2011,15 @@ Lockfile:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   
+  cosmiconfig@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-4.0.0.tgz#760391549580bbd2df1e562bc177b13c290972dc"
+    dependencies:
+      is-directory "^0.3.1"
+      js-yaml "^3.9.0"
+      parse-json "^4.0.0"
+      require-from-string "^2.0.1"
+  
   cp-file@^3.1.0:
     version "3.2.0"
     resolved "https://registry.yarnpkg.com/cp-file/-/cp-file-3.2.0.tgz#6f83616254624f0ad58aa4aa8d076f026be7e188"
@@ -2350,6 +2362,10 @@ Lockfile:
   detect-node@^2.0.3:
     version "2.0.4"
     resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
+  
+  dexie@^2.0.4:
+    version "2.0.4"
+    resolved "https://registry.yarnpkg.com/dexie/-/dexie-2.0.4.tgz#6027a5e05879424e8f9979d8c14e7420f27e3a11"
   
   diagnostics@^1.1.1:
     version "1.1.1"
@@ -3662,6 +3678,18 @@ Lockfile:
     version "0.5.5"
     resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
   
+  import-cwd@^2.0.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
+    dependencies:
+      import-from "^2.1.0"
+  
+  import-from@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/import-from/-/import-from-2.1.0.tgz#335db7f2a7affd53aaa471d4b8021dee36b7f3b1"
+    dependencies:
+      resolve-from "^3.0.0"
+  
   import-local@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/import-local/-/import-local-1.0.0.tgz#5e4ffdc03f4fe6c009c6729beb29631c2f8227bc"
@@ -3834,6 +3862,10 @@ Lockfile:
       is-accessor-descriptor "^1.0.0"
       is-data-descriptor "^1.0.0"
       kind-of "^6.0.2"
+  
+  is-directory@^0.3.1:
+    version "0.3.1"
+    resolved "https://registry.yarnpkg.com/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
   
   is-dotfile@^1.0.0:
     version "1.0.3"
@@ -5233,6 +5265,10 @@ Lockfile:
     dependencies:
       remove-trailing-separator "^1.0.1"
   
+  normalize.css@^8.0.0:
+    version "8.0.0"
+    resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+  
   now-and-later@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/now-and-later/-/now-and-later-2.0.0.tgz#bc61cbb456d79cb32207ce47ca05136ff2e7d6ee"
@@ -5806,6 +5842,22 @@ Lockfile:
     version "0.1.1"
     resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   
+  postcss-load-config@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-2.0.0.tgz#f1312ddbf5912cd747177083c5ef7a19d62ee484"
+    dependencies:
+      cosmiconfig "^4.0.0"
+      import-cwd "^2.0.0"
+  
+  postcss-loader@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-3.0.0.tgz#6b97943e47c72d845fa9e03f273773d4e8dd6c2d"
+    dependencies:
+      loader-utils "^1.1.0"
+      postcss "^7.0.0"
+      postcss-load-config "^2.0.0"
+      schema-utils "^1.0.0"
+  
   postcss-modules-extract-imports@^1.2.0:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-1.2.0.tgz#66140ecece38ef06bf0d3e355d69bf59d141ea85"
@@ -5844,6 +5896,14 @@ Lockfile:
       chalk "^2.4.1"
       source-map "^0.6.1"
       supports-color "^5.4.0"
+  
+  postcss@^7.0.0:
+    version "7.0.5"
+    resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.5.tgz#70e6443e36a6d520b0fd4e7593fcca3635ee9f55"
+    dependencies:
+      chalk "^2.4.1"
+      source-map "^0.6.1"
+      supports-color "^5.5.0"
   
   prefix-matches@^1.0.1:
     version "1.0.1"
@@ -6284,6 +6344,10 @@ Lockfile:
   require-directory@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  
+  require-from-string@^2.0.1:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   
   require-main-filename@^1.0.1:
     version "1.0.1"
@@ -7822,7 +7886,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/normalise.css: Not found
+  Error: https://registry.yarnpkg.com/postcss-loader%5E2.1: Not found
       at Request.params.callback [as _callback] (/Users/tom/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:62098:18)
       at Request.self.callback (/Users/tom/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:123085:22)
       at emitTwo (events.js:126:13)

@@ -73,12 +73,12 @@ module.exports = ({production, server, extractCss, coverage, analyze, karma} = {
       },
       {
         test: /\.less$/i,
-        use: ['style-loader', 'css-loader', 'less-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
         issuer: /\.[tj]s$/i
       },
       {
         test: /\.less$/i,
-        use: ['css-loader', 'less-loader'],
+        use: ['css-loader', 'postcss-loader', 'less-loader'],
         issuer: /\.html?$/i
       },
       { test: /\.html$/i, loader: 'html-loader' },
