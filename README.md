@@ -13,7 +13,7 @@ As a user, I want to:
 
 ## Designs
 
-TODO: Insert designs
+Designs are exported in [designs.pdf](./designs.pdf)
 
 ## Demo:
 
