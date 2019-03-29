@@ -33,3 +33,4 @@ node_modules
 /src/environment.ts
 
 dist
+yarn-error.log
