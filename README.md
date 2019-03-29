@@ -43,6 +43,12 @@ Install dependencies using yarn. Yarn is very similar to npm, we like yarn as it
 $ yarn install
 ```
 
+and then to run the project:
+
+```bash
+$ yarn start
+```
+
 ## Read more:
 
 * [Running the application](docs/running-the-application.md)
